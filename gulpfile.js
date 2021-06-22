@@ -1,4 +1,4 @@
-const { src, dest, watch, parallel } = require('gulp');
+const { src, dest, watch, parallel, series } = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('autoprefixer');
 const postcss    = require('gulp-postcss')
@@ -55,7 +55,10 @@ function watchArchivos() {
     watch(paths.imagenes, imaganes)
     watch(paths.imagenes, versionWebp);
 }
+function build(cb) {
+    cb()
+}
 
 
 exports.default = parallel(css, javascript, imaganes, versionWebp, watchArchivos);
-
+exports.build= build;
