@@ -1,0 +1,42 @@
+.header{
+    background-image: url(\build\img\backgroundC.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+
+    @include tablet{
+        max-width: 100%;
+    }
+}
+
+.title{
+    color: $white;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    width: 80%;
+    height: 20%;
+    position: absolute;
+    border-radius: 2rem;
+    top: 50%;
+    left: 10%;
+    display: flex;
+    align-items:center;
+    
+    backdrop-filter: blur(5px);
+    @include tablet {
+        width: 30%;
+        left: 35%;
+    }
+    h1{
+        margin: 0 auto;
+        text-transform: uppercase;
+    }
+    .front-end{
+        font-size: 2rem;
+        font-weight: $regular;
+        text-transform: none;
+    }
+}
+
