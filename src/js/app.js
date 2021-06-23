@@ -10,8 +10,8 @@ function addEventListeners() {
     //Function to add smooth scroll
     smoothScroll()
 
-    //Avoid button error
-    projectSlide()
+    //For hidding the menu when select a section in mobiles
+    menuOff()
 }
 
 function responsiveMenu() {
@@ -33,6 +33,20 @@ function smoothScroll() {
         })
     })
 }
+
+function menuOff() {
+    
+    const links = document.querySelectorAll('.link')
+    links.forEach( link => {
+        link.addEventListener('click', () => {
+            console.log('diste click')
+            const hideMenu = document.querySelector('.nav-content')
+            hideMenu.classList.remove('active-mobile')
+            
+        })
+    })
+    }
+
 
 
 
