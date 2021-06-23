@@ -5,6 +5,14 @@
         padding: 2rem;
         color: $white;
     }
+    .play{
+        color: $white;
+        margin-top: none;
+        display: block;
+        @include tablet{
+            display: none;
+        }
+    }
 }
 
 .skills-logos{
