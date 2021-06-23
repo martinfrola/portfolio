@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function formValidation() {
     const submit = document.querySelector('.send-button')
+    
     submit.addEventListener('click', e => {
         e.preventDefault()
         const name = document.querySelector('#name')

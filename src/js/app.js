@@ -16,11 +16,9 @@ function addEventListeners() {
 function responsiveMenu() {
     const mobileMenu = document.querySelector('.mobile-menu')
     mobileMenu.addEventListener('click', () => {
-        console.log('Click');
         const menu = document.querySelector('.nav-content')
         menu.classList.toggle('active-mobile')
-    })   
-}
+})}
 
 function smoothScroll() {
     const sections = document.querySelectorAll('.nav-content a');

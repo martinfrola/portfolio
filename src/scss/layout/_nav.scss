@@ -10,25 +10,28 @@
     .nav-content{
         visibility: hidden;
         opacity: 0;
-        transition: opacity .5s linear;
+        transition: opacity 1s linear, height linear;
         align-items:flex-start;
+        height: 0;
         @include tablet{
             visibility: visible;
             opacity: 1;
             display: flex;
             flex-direction: row;
             justify-content:flex-end;
+            height: 100%;
             a{
                 margin-right: 1.5rem;
             }
         }
     }
+
     .active-mobile{
         visibility: visible;
         opacity: 1;
         display: flex;
         flex-direction: column;
-
+        height: 100%;
         @include tablet {
             flex-direction: row;
         }
