@@ -10,7 +10,8 @@ function addEventListeners() {
     //Function to add smooth scroll
     smoothScroll()
 
-    form()
+    //Avoid button error
+    projectSlide()
 }
 
 function responsiveMenu() {
@@ -32,6 +33,8 @@ function smoothScroll() {
         })
     })
 }
+
+
 
 
 

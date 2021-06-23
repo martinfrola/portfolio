@@ -67,6 +67,7 @@
         transition: opacity 0.5s linear 0.8s;
         
     }
+
     h3{
         margin: 10% auto 0 auto;
     }
@@ -93,4 +94,8 @@
     @include tablet {
         display: none;
     }
+}
+
+.disabled{
+    pointer-events: none;
 }
