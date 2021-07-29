@@ -1,38 +1,38 @@
-.skills{
-    h2{
-        text-transform: uppercase;
-        margin: 0;
-        padding: 2rem;
-        color: $white;
+.skills {
+  h2 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 2rem;
+    color: $white;
+  }
+  .play {
+    color: $white;
+    margin-top: none;
+    display: block;
+    @include tablet {
+      display: none;
     }
-    .play{
-        color: $white;
-        margin-top: none;
-        display: block;
-        @include tablet{
-            display: none;
-        }
-    }
+  }
 }
 
-.skills-logos{
-    padding-bottom: 5rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 2rem;
-    @include tablet {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.skills-logos {
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    img{
-        width: 100%;
-        height: 20rem;
-        transition: transform 3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-        &:hover{ 
-            transform:rotate(360deg) ;
-        }
+  img {
+    width: 100%;
+    height: 15rem;
+    transition: transform 3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    &:hover {
+      transform: rotate(360deg);
     }
-    p{
-        color: $white;
-    }
+  }
+  p {
+    color: $white;
+  }
 }
